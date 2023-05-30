@@ -4,7 +4,7 @@ CWD ?= $(shell pwd)
 DIST := $(CWD)/dist
 DIST_DIRS := $(DIST)
 
-blocklist_FILES := \
+BLOCKLIST_FILES := \
 	https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/xato-net-10-million-passwords-10.txt \
 	https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/xato-net-10-million-passwords-100.txt \
 	https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/xato-net-10-million-passwords-1000.txt \
@@ -22,7 +22,7 @@ clean:
 .PHONY: generate
 generate:
 	@mkdir -p $(DIST)
-	@$(foreach file, $(blocklist_FILES), \
+	@$(foreach file, $(BLOCKLIST_FILES), \
 		curl -SsfL -o $(DIST)/$$(basename $(file)) $(file); \
 		dd if=$(DIST)/$$(basename $(file)) of=$(DIST)/lowercase-$$(basename $(file)) conv=lcase status=none; \
 	)
