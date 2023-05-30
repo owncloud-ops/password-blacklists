@@ -21,7 +21,7 @@ steps:
       author_email: devops@owncloud.com
       author_name: ownclouders
       branch: main
-      message: "[skip ci] automated blacklists update"
+      message: "[skip ci] automated blocklists update"
       netrc_password:
         from_secret: github_token
     when:

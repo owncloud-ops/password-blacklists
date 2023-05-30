@@ -1,8 +1,8 @@
-# password-blacklists
+# password-blocklists
 
 [![Build Status](https://drone.owncloud.com/api/badges/owncloud-ops/errors/status.svg)](https://drone.owncloud.com/owncloud-ops/errors)
 
-Automated passwords blacklist sync from the [SecLists](https://github.com/danielmiessler/SecLists) project. A lowercase version is also generated for all blacklists.
+Automated password blocklists sync from the [SecLists](https://github.com/danielmiessler/SecLists) project. A lowercase version is also generated for each blocklists.
 
 ## License
 

@@ -1,6 +1,6 @@
 ---
 repository:
-  name: password-blacklists
+  name: password-blocklists
 
   private: false
   has_issues: true
