@@ -1,5 +1,6 @@
 ---
 kind: pipeline
+type: docker
 name: build
 
 platform:
@@ -32,5 +33,3 @@ trigger:
   ref:
     - refs/heads/main
     - refs/pull/**
-
-...
